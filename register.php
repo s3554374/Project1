@@ -10,6 +10,7 @@
             Username:<input type="text" name = "username" /><br>
             Password:<input type="password" name="password" /><br>
             <input type="submit" value="Register Now" />
+            <input type="button" name="Submit" value="return to login" onclick="location.href='login.php'"/>
         </form>
 
  </div>
