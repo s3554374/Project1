@@ -30,10 +30,10 @@ include(process_login.php);
    <script> 
    document.getElementById('email').value='<?php echo $row["email"];?>'; 
    </script>
-   <p>Habby:</p>
-   <span id="habby"></span>
+   <p>Phone:</p>
+   <span id="phone"></span>
    <script> 
-   document.getElementById('habby').value='<?php echo $row["habby"];?>'; 
+   document.getElementById('phone').value='<?php echo $row["phone"];?>'; 
    </script>
    
 </div>
