@@ -12,14 +12,14 @@
 	$oldpassword = $_REQUEST ["oldpassword"];
 	$newpassword = $_REQUEST ["newpassword"];
 	
-	$con = mysql_connect ( "localhost", "user2","123456", "root2" );
+	$con = mysql_connect ( "localhost", "root","", "projec1" );
 	if (! $con) {
 		die ( 'connect failed' . $mysql_error () );
 	}
 	mysql_select_db ( "user_info", $con );
 	$dbusername = null;
 	$dbpassword = null;
-	$result = mysql_query ( "select * from user_info where username ='{$username}' and isdelete =0;" );
+	$result = mysql_query ( "select * from customer where username ='{$username}' and isdelete =0;" );
 	while ( $row = mysql_fetch_array ( $result ) ) {
 		$dbusername = $row ["username"];
 		$dbpassword = $row ["password"];
@@ -40,7 +40,7 @@
 	</script>
 	<?php
 	}
-	mysql_query ( "update  user_info set password='{$newpassword}' where username='{$username}'" ) or die ( "faied to update" . mysql_error () );
+	mysql_query ( "update  customer set password='{$newpassword}' where username='{$username}'" ) or die ( "faied to update" . mysql_error () );
 	mysql_close ( $con );
 	?>
  
