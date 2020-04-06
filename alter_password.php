@@ -16,7 +16,7 @@
 	if (! $con) {
 		die ( 'connect failed' . $mysql_error () );
 	}
-	mysql_select_db ( "user_info", $con );
+	mysql_select_db ( "customer", $con );
 	$dbusername = null;
 	$dbpassword = null;
 	$result = mysql_query ( "select * from customer where username ='{$username}' and isdelete =0;" );
