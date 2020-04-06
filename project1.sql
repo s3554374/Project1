@@ -45,8 +45,10 @@ CREATE TABLE `customer` (
   `username` varchar(20) NOT NULL,
   `password` char(40) NOT NULL,
   `gender` varchar(20) NOT NULL,
+  `dayofbirth` date,
+  `age` int(11) NOT NULL,
   `email` varchar(20) NOT NULL,
-  `age` int(11) NOT NULL
+  `phone` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
