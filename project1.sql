@@ -47,6 +47,7 @@ CREATE TABLE `customer` (
   `gender` varchar(20) NOT NULL,
   `dayofbirth` date,
   `age` int(11) NOT NULL,
+  `weight` int(11) NOT NULL,
   `email` varchar(20) NOT NULL,
   `phone` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
