@@ -1,0 +1,12 @@
+Installation and instruction:
+Download phpstudy, run apache2.4.39, and run MySQL8.0.12. Import the database setting project1.sql. You can start using the homepage.
+Release notes:
+version 1.0: The first release only has the login registration function. Users can log in and register information. In the first release, there was only a simple relational database.
+
+version 1.5: In the second release, we have the admin management page, dashboard. The logged-in user can see a part of his profile.
+
+version 2.0:  In the third release, we basically completed the display of the profile, and added the automatic recommendation function, users can see the information of other users recommended.
+
+version 2.5:  In the fourth release, we improved the dashboard function and added a chat function, users can chat in the lobby. And can be used normally in non-debug mode.
+
+version 3.0:  The system will automatically recommend contacts based on the user's preferences.
