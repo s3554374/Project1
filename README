@@ -1,5 +1,6 @@
 Installation and instruction:
 Download phpstudy, run apache2.4.39, and run MySQL8.0.12. Import the database setting project1.sql. You can start using the homepage.
+URL:https://github.com/s3554374/Project1
 Release notes:
 version 1.0: The first release only has the login registration function. Users can log in and register information. In the first release, there was only a simple relational database.
 
@@ -10,3 +11,71 @@ version 2.0:  In the third release, we basically completed the display of the pr
 version 2.5:  In the fourth release, we improved the dashboard function and added a chat function, users can chat in the lobby. And can be used normally in non-debug mode.
 
 version 3.0:  The system will automatically recommend contacts based on the user's preferences.
+
+Fixed
+[1.0] - 2020-3-10
+the login and registration and database
+
+Added
+login page/ add css and js
+registration page/ changed php function and css and js
+database/ add user table
+
+Changed
+
+Fixed
+
+[1.5] - 2020-3-20
+we have the admin management page, dashboard. The logged-in user can see a part of his profile
+
+Added
+admin management page/ dashboard page / user profile page
+
+Changed
+login page / changed css and js
+registration page/ changed php function and some validation
+database/  changed user database
+
+Fixed
+login page layout
+
+[2.0] - 2020-3-20
+we basically completed the display of the profile, and added the automatic recommendation function, users can see the information of other users recommended.
+
+Added
+automatic recommendation function/ added recommendation function for user
+information of other users recommended/ added information of other users recommended
+
+Changed
+profile page / display of the profile
+
+Fixed
+all layout 
+error on profile page display
+
+version 2.5:
+
+Added:
+
+chat.sql
+chat_display_ajax.php
+server_get.php
+speak.php
+
+Changed:
+
+The chat between users is realized through the ajax function in jQuery. Now users can chat.
+Added the debug mode of the chat function to facilitate development.
+
+Fixed:
+
+Fixed a bug that the chat function cannot be triggered correctly
+
+version 3.0:
+Added: 
+
+match.php
+We have added a file named match.php to achieve the matching function..
+
+Changed:
+We search users' hobbies through database sql commands to match users with similar hobbies
