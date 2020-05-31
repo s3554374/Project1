@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
+  `admin_id` int(11) NOT NULL,
   `adName` varchar(20) NOT NULL,
   `password` char(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -41,16 +41,28 @@ CREATE TABLE `admin` (
 --
 
 CREATE TABLE `customer` (
-  `id` int(11) NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
   `username` varchar(20) NOT NULL,
+  `f_name` varchar(20) NOT NULL,
+  `l_name` varchar(20) NOT NULL,
   `password` char(40) NOT NULL,
-  `gender` varchar(20) NOT NULL,
+  `gender` enum('male','female','other') NOT NULL,
+  `hobby` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `street` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `zip` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
   `dayofbirth` date,
-  `age` int(11) NOT NULL,
   `weight` int(11) NOT NULL,
-  `email` varchar(20) NOT NULL,
-  `phone` int(11) NOT NULL
+  `height` int(3) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` int(10) NOT NULL,
+/*  `profile_photo` varchar(255) NOT NULL,*/
+  `reg_date` datetime DEFAULT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 --
 -- Indexes for dumped tables
@@ -60,7 +72,7 @@ CREATE TABLE `customer` (
 -- Indexes for table `customer`
 --
 ALTER TABLE `customer`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
